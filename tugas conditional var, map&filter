@@ -1,0 +1,27 @@
+//conditional var
+const pemakaian = 5;
+
+const keterangan = pemakaian > 10 ? "sudah bisa ganti" : "masih bisa dipakai";
+console.log(keterangan);
+
+//map&filter
+const listLaptop = [
+  {
+    merk: "asus ROG",
+    harga: 25000000,
+  },
+  {
+    merk: "Legion",
+    harga: 15000000,
+  },
+  {
+    merk: "MSI",
+    harga: 10000000,
+  },
+];
+
+const listmerk = listLaptop.map((Laptop) => Laptop.merk);
+console.log(listmerk);
+
+const LaptopMurah = listLaptop.filter((Laptop) => Laptop.harga < 25000000);
+console.log(LaptopMurah);
